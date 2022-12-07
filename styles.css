@@ -1,0 +1,67 @@
+/*-- Base styles --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+:root {
+
+   --primary-clr: hsl(223, 10%, 36%);
+   --accent-clr: hsl(281, 26%, 48%);
+   --accent-clr-dark: hsl(282, 18%, 35%);
+   --bg-color-clr: hsl(280, 13%, 87%);
+
+   --ff-global: 'Poppins', sans-serif;
+   --ff-font-weight-light: 300;
+   --ff-font-weight-mid: 500;
+
+}
+
+/* -- Design -- */
+
+body {
+  background-color: var(--bg-color-clr);
+  font-family: var(--ff-global);
+  font-weight: var(--ff-font-weight-light);
+  color: var(--primary-clr);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--accent-clr);
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+  text-decoration: underline;
+}
+
+.header h2 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#introduction {
+  font-weight: var(--ff-font-weight-mid);
+}
+
+ul {
+  list-style-type: square;
+}
+
+button {
+  font-family: var(--ff-global);
+  font-size: 1.5rem;
+  padding: 0.3em 1em 0.3em 1em;
+  border-radius: 10px;
+  color: white;
+  border: unset;
+  background-color: var(--accent-clr);
+}
+
+button:hover {
+  background-color: var(--accent-clr-dark);
+  cursor: pointer;
+}
